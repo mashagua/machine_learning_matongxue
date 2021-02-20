@@ -1,13 +1,18 @@
 import numpy as np
 w, w0 = np.array([0, 0, 0, 0, 0]), 0
-def d(x):
+
+
+def d (x):
     return np.dot(w, x)+w0
+
 
 def sign(x):
     return 1 if x >= 0 else -1
 
+
 def h(x):
     return sign(d(x))
+
 
 def clf_score(x,y):
     score = 0
